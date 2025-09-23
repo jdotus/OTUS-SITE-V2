@@ -419,7 +419,7 @@ hr {
     transition: all 0.5s ease;
 
     /*background image*/
-    background-image: url("../IMG/Our_Services/3D_mps_img.jpg");
+    background-image: url("../IMG/Our_Services/Untitled\ design\ \(8\).png");
     filter: brightness(50%);
     background-color: #cccccc;
     background-position: right;
@@ -450,10 +450,10 @@ hr {
     /* background-image: url("../IMG/Our_Services/2D_mps_img.jpg"); */
     background-image: url("../IMG/Our_Services/slide-1.jpg");
     filter: brightness(50%);
-    background-color: #cccccc;
-    background-position: right;
+    background-color: #ffffff;
+    background-position: 80%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 250%;
     position: relative;
     border-radius: 8px;
 }
@@ -532,7 +532,8 @@ hr {
 
 .otus_mps img,
 .tyto_mps img {
-    width: 250px;
+    width: 280px;
+    padding: 0 0 150px 0;
     object-fit: fill;
 }
 
@@ -547,11 +548,22 @@ hr {
         flex-direction: column;
         padding: 20px 0 20px 0;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
     }
+    
+    .otus_mps {
+        background-position: 80%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     .otus_mps .content,
     .tyto_mps .content {
-        width: 40%;
+        width: 50%;
         padding-bottom: 20px;
+        padding-left: 18px;
     }
     .otus_mps::before,
     .tyto_mps::before {
@@ -562,21 +574,71 @@ hr {
     .otus_mps .service-container-learnmore,
     .tyto_mps .service-container-learnmore {
         font-size: 12px;
-    
+        padding: 0 10px 5px 0;
     }
     .otus_mps img,
     .tyto_mps img {
-        width: 300px;
+        width: 280px;
         object-fit: fill;
+        /* padding: 25px 25px 25px 25px; */
+        margin: 50px 50px 50px 50px;
+        padding:  0 0 0 0;
+    }
+}
+@media screen and (max-width: 1165px) {
+    .otus_mps::before,
+    .tyto_mps::before {
+        width: 195%;
+        height: 195%;
+    }
+    .otus_mps img,
+    .tyto_mps img {
+        width: 170px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    /* .otus_mps::before,
+    .tyto_mps::before {
+        width: 200vw;
+        height: 200vw;
+    } */
+
+    .otus_mps,
+    .tyto_mps {
+        /* min-width: 600px;
+        min-height: 600px; */
+        margin: 20px 0;
+        padding: 30px 0 0 0;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    .otus_mps .content,
+    .tyto_mps .content {
+        width: 80%;
+        padding-bottom: 20px;
+        padding-left: 18px;
     }
 
     .otus_mps::before,
     .tyto_mps::before {
         width: 200%;
-        height: 178%;
+        height: 140%;
+    }
+
+    .otus_mps .service-container-learnmore,
+    .tyto_mps .service-container-learnmore {
+        font-size: 12px;
+        padding: 20px 10px 20px 0;
     }
 }
-
 /* END OF SERVICES */
 
 /* AWARD SLIDER */
