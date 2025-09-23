@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/*--------- flat-icon ---------*/
+/* @import url('/fonts/icon/font/flaticon.css'); */
+@import url(/flaticon/font/flaticon.css);
+
+.html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+
+body, p,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, hr{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Public Sans';
+    font-weight: 600;
+}
+
+:root {
+    --nav-bg-color: #ffffff;
+    --color-paragraph: #000000a6;
+    --logo-color-red: #d01e27;
+    --carousel-caption-base: #1B1717;
+    --carousel-caption-stroke:lightblue;
+}
+
+/* MAIN ABOUT */
+
+.about-bg-color {
+    background-color: white;
+}
+
+.about {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-content {
+    width: 720px;
+}
+
+.about-pre-title {
+    text-transform: uppercase;
+    color: var(--color-paragraph);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 0 0 0 5px;
+}
+
+.about-content h1 {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.about-pre-content {
+    color: var(--color-paragraph);
+    padding: 12px 10PX;
+    font-size: 15px;
+}
+.about-image {
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 11px 11px var(--logo-color-red);
+}
+.about-image img {
+    border-radius: 8px;
+}
+/* END MAIN ABOUT */
+
+/* VISION */
+.vision {
+    display: flex;
+    justify-content: center;
+    
+    padding: 80px 0 ;
+}
+
+.vision-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+    width: 300px;
+}
+.vision-icon img {
+    width: 64px;
+}
+
+.vision-icon h3 {
+    font-weight: 800;
+    font-size: 33px;
+}
+
+.vision-content {
+    width: 600px;
+    padding: 10px;
+}
+
+.vision-content h4 {
+    color: var(--color-paragraph);
+    font-size: 16px;
+}
+
+.bold-vision-content {
+    font-weight: 700;
+    color: black;
+}
+/* END VISION */
+
+/* VISION */
+.mission {
+    display: flex;
+    justify-content: center;
+    
+    padding: 20px 0 80px 0;
+}
+
+.mission-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+    width: 300px;
+}
+.mission-icon img {
+    width: 64px;
+}
+
+.mission-icon h3 {
+    font-weight: 800;
+    font-size: 33px;
+}
+
+.mission-content {
+    width: 600px;
+    padding: 10px;
+}
+
+.mission-content h4 {
+    color: var(--color-paragraph);
+    font-size: 16px;
+}
+
+/* COMPANY TEAM */
+.company {
+    background-color: lightgray;
+    padding: 90px 0;
+}
+
+.company-container {
+    display: flex;
+    width: 90%; 
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.company-employees h3, .company-clients h3 {
+    padding: 0 0 15px 0 ;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.company-employees p, .company-clients p {
+    color: var(--color-paragraph);
+}
+
+.company-employees, .company-clients {
+    padding: 42px;
+    width: 330px;
+    border-radius: 11px;
+    transition-duration: 0.5s;
+}
+/* END COMPANY TEAM */
+
+/* HISTORY */
+.history-container {
+    width: 90%;
+    margin: 90px auto 80px auto;
+}
+
+.history-title h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    font-size: 38px;
+    word-spacing: 12px;
+}
+
+.history-content {
+    padding-top: 70px;
+    width:650px;
+    margin: 0 auto;
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-body {
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.accordion-body span {
+    font-weight: 700;
+}
+
+.accordion-button::after {
+    background-image: initial;
+    width: 0;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: initial;
+    width: 0;
+  }
+/* END HISTORY */
+
+/* AWARDING */
+.award-container {
+    width: 90%;
+    margin: 90px auto 80px auto;
+}
+
+.award-heading {
+    text-align: center;
+}
+
+.award-heading h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    font-size: 38px;
+    word-spacing: 12px;
+}
+
+.award-list {
+   min-height: 300px; 
+}
+
+.carousel-caption {
+    /* top: 32%; */
+    left: 12%;
+}
+
+.award-content {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.carousel-caption h5 {
+    color: var(--logo-color-red);
+    font-size: 23px;
+    font-weight: 700;
+    
+}
+
+.carousel-caption p{
+    padding-top: 13px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.carousel-caption img {
+    width: 650px;
+}
+
+/* END AWARDING */
+
+/* ON HOVER */
+.company-employees:hover, .company-clients:hover {
+    background-color: white;
+    border-radius: 11px;
+}
+
+/* END ON HOVER */
+
+/* BREAKPOINT */
+
+@media screen and (max-width: 970px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .about-image {
+        margin-top: 55px;
+        width:350px;
+    }
+
+    .about-pre-title, .about-content h1, .about-pre-content, .vision-content h4 {
+        text-align: center;
+    }
+
+    .award-content {
+        width: 100%;
+    }
+
+
+    .history-content {
+        width:90%;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .carousel-caption img {
+        width: 100%;
+    }
+    .carousel-caption { 
+        top: 12%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .company-employees, .company-clients {
+        padding: 25px;
+    }
+
+    .carousel-caption h5 {
+        color: var(--logo-color-red);
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+    
+    .carousel-caption p{
+        padding-top: 12px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (max-width:650px ) {
+    .company-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* END BREAKPOINT*
+

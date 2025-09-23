@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/*--------- flat-icon ---------*/
+@import url('../fonts/icon/font/flaticon.css');
+
+body, * , p,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Public Sans';
+    font-weight: 600;
+}
+
+:root {
+    --nav-bg-color: #ffffff;
+    --color-paragraph: #000000a6;
+    --logo-color-red: #d01e27;
+}
+
+/* Navigation Bar*/
+.nav-link, .dropdown-item, .btn {
+    font-size: 13px;
+    text-transform: uppercase !important;
+    font-weight: 600;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    /* box-shadow: 0px 1px 60px var(--color-paragraph); */
+    /* rder-bottom: 1px solid rgb(110, 104, 104); */
+}
+
+/* Increasing the Size of the Carousel Indicator*/
+.carousel-indicators [data-bs-target] {
+    width: 35px !important;
+    height: 4px !important;
+}
+
+/* Changing the style of the dropdown nav link */
+.dropdown-menu {
+    animation: 0.5s slidedown;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-10%);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+
+.dropbtn {
+    color: #000000a6;
+    margin: 8px;
+    padding: 0 !important;
+    font-size: 13px;
+    border: none;
+    background-color: white;
+  }
+
+  .active {
+    color: #000000;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;  
+    opacity: 1;
+    height: 160px; /* Adjust this to the height of your dropdown */
+    }
+  
+  .dropdown:hover .dropbtn {background-color: #ffffff00;}
+/* END of Navigation Bar*/
+
+@media screen and (max-width: 575px) {
+    .dropbtn {
+        margin: 8px 0;
+    }
+    .dropdown:hover .dropdown-content {
+        height: 150px; 
+    }
+}

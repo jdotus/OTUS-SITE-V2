@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+/*--------- flat-icon ---------*/
+/* @import url('/fonts/icon/font/flaticon.css'); */
+@import url(/flaticon/font/flaticon.css);
+
+.html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+
+body, * , p,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, hr{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    font-family: 'Public Sans';
+    font-weight: 600;
+}
+
+:root {
+    --nav-bg-color: #ffffff;
+    --color-paragraph: #000000a6;
+    --logo-color-red: #d01e27;
+    --carousel-caption-base: #1B1717;
+    --carousel-caption-stroke:lightblue;
+}
+
+/* Accordion */
+.accordion-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-container{
+    background-color: gainsboro;
+    padding: 20px 60px;
+    border-radius: 8px;
+    margin: 10px 0 20px 0;
+}
+/* END Accordion */
