@@ -37,7 +37,7 @@
                 <button class="carousel-control-next" type="button" data-bs-target="#maincarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                  </button> -->
+            </button> -->
     </div>
 
 </div>
@@ -60,7 +60,7 @@
                 <h3>We provide complete photocopier solutions</h3>
                 <p>From sales and rentals to maintenance, supplies, and managed print services—so your office runs efficiently every day.</p>
             </div>
-            <a class="service-container-learnmore" href="Learn-more">Learn more</a>  
+            <a class="service-container-learnmore" href="otus_mps.php">Learn more</a>  
         </div>
         <div class="tyto_mps test-1">
             <img src="./img/TYTO & OTUS LOGO MPS/TYTO LOGO MPS SQUARE.png" alt="TYTO MPS">
@@ -298,6 +298,6 @@
 </div>
 <!-- END WHY CHOOSE US -->
 
+<?php include('scripts.php'); ?>
 <?php include('footer.php'); ?>
 <?php include('script_5.0.php'); ?>
-<?php include('scripts.php'); ?>

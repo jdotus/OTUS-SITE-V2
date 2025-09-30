@@ -419,19 +419,16 @@ hr {
     transition: all 0.5s ease;
 
     /*background image*/
-    background-image: url("../IMG/Our_Services/Untitled\ design\ \(8\).png");
-    filter: brightness(50%);
-    background-color: #cccccc;
-    background-position: right;
+    background-image: url("../IMG/Our_Services/Colido\ Products.jpg");
+    filter: brightness(100%);
+    background-color: #ffffff;
+    background-position: 80%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150%;
     position: relative;
     border-radius: 8px;
 }  
 
-.tyto_mps:hover {
-    filter: brightness(95%);
-}
 .otus_mps {
     min-width: 600px;
     min-height: 600px;
@@ -449,16 +446,13 @@ hr {
     /*background image*/
     /* background-image: url("../IMG/Our_Services/2D_mps_img.jpg"); */
     background-image: url("../IMG/Our_Services/slide-1.jpg");
-    filter: brightness(50%);
+    filter: brightness(100%);
     background-color: #ffffff;
     background-position: 80%;
     background-repeat: no-repeat;
     background-size: 250%;
     position: relative;
     border-radius: 8px;
-}
-.otus_mps:hover {
-    filter: brightness(95%);
 }
 
 .otus_mps .content,
@@ -476,10 +470,10 @@ hr {
 .tyto_mps::before {
   content: '';
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: -50%;
-  width: 200%;
-  height: 138%;
+  width: 170%;
+  height: 129%;
   background: linear-gradient(
     0deg, 
     transparent, 
@@ -550,7 +544,10 @@ hr {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
+    }
+
+    .tyto_mps {
+        background-size: 100%;
     }
     
     .otus_mps {
@@ -561,14 +558,16 @@ hr {
 
     .otus_mps .content,
     .tyto_mps .content {
-        width: 50%;
+        width: 55%;
         padding-bottom: 20px;
         padding-left: 18px;
     }
     .otus_mps::before,
     .tyto_mps::before {
-        width: 200%;
-        height: 200%;
+        top: -15%;
+        left: -50%;
+        width: 170%;
+        height: 195%;
     }
 
     .otus_mps .service-container-learnmore,
@@ -580,9 +579,8 @@ hr {
     .tyto_mps img {
         width: 280px;
         object-fit: fill;
-        /* padding: 25px 25px 25px 25px; */
+        padding: 0 0 0 0;
         margin: 50px 50px 50px 50px;
-        padding:  0 0 0 0;
     }
 }
 @media screen and (max-width: 1165px) {
@@ -598,12 +596,17 @@ hr {
     
 }
 
-@media screen and (max-width: 850px) {
-    /* .otus_mps::before,
+@media screen and (max-width: 1000px) {
+    .otus_mps::before,
     .tyto_mps::before {
-        width: 200vw;
-        height: 200vw;
-    } */
+        top: -15%;
+        left: -50%;
+        width: 195%;
+        height: 220%;
+    }
+}
+
+@media screen and (max-width: 850px) {
 
     .otus_mps,
     .tyto_mps {
@@ -637,6 +640,25 @@ hr {
     .tyto_mps .service-container-learnmore {
         font-size: 12px;
         padding: 20px 10px 20px 0;
+    }
+
+    .service_description {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .otus_mps img,
+    .tyto_mps img {
+        padding: 0 0 0 0;
+        margin: 20px 50px 50px 50px !important;
+    }
+    .otus_mps::before,
+    .tyto_mps::before {
+        width: 170%;
+        height: 180%;
+        top: -35%;
+        left: -50%;
     }
 }
 /* END OF SERVICES */
