@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCSI</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php include('header.php'); ?>
+<?php include('navbar.php'); ?>
+
+    <H1>TYTO</H1>    
+
+<?php include('scripts.php'); ?>
+<?php include('footer.php'); ?>
+<?php include('script_5.0.php'); ?>

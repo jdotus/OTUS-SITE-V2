@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="CSS/home-animation.css">
     <link rel="stylesheet" href="CSS/scrollbar.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/otus_mps.css">
+    <link rel="stylesheet" href="CSS/tyto_mps.css">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">

@@ -1,0 +1,60 @@
+.main-container {
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.hero-background {
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+
+    filter: brightness(100%);
+    background-image: url("../IMG/Our_Services/slide-1.jpg");
+    background-color: #4b4b4b;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* border-radius: 8px; */
+}
+
+.hero-text-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(50, 50, 50, 0.5); /* semi-transparent gray */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* To ensure content is above the overlay */
+.hero-background > * {
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    text-shadow: #000000 1px 0 10px;
+    z-index: 2;
+}
+
+.hero-background h2,
+.hero-background p {
+    padding: 0 0 16px 0;
+    letter-spacing: 1px;
+}
+.hero-background h2 {
+    font-size: 37px;
+    font-weight: 700;
+}
+.hero-background p {
+    font-size: 18px;
+    font-weight: 300;
+}
