@@ -63,7 +63,7 @@
 
 }
 .main-container h1{
-    font-size: clamp(1rem, 4vw, 2.3rem);
+    font-size: clamp(1.3rem, 4vw, 2.3rem);
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
@@ -74,7 +74,7 @@
     margin: 0 auto 40px auto;
     
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -84,7 +84,7 @@
 }
 
 .intro-content p{
-    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-size: clamp(0.89rem, 2vw, 1.7rem);
     font-weight: 300;
     text-align: right;
 }
@@ -111,18 +111,58 @@
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    font-size: clamp(0.89rem, 2vw, 1.3rem);
+    font-weight: 300;
+}
+.comprehensive-support h1 {
+    font-size: clamp(1.3rem, 4vw, 2.3rem);
 }
 
 .comprehensive-main-content {
     padding: 100px 0;
+    width: 80%;
+    margin: 30px auto;
+    /* padding: 60px 0 0 0; */
 }
 
-@media screen and (max-width: 700px) {
-    
-    .hero-text-container {
-        width: 97%;
-        margin: 0 auto;
-    }
+.comprehensive-content-rapid p {
+    text-align: left;
+    margin: 0 0;
+    width: 100%;
+}
+
+.comprehensive-content-rapid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.rapid-content {
+    width: 50%;
+}
+
+.rapid-content p {
+    font-size: clamp(0.89rem, 2vw, 1.1rem);
+    font-weight: 300;
+}
+
+.rapid-image {
+    width: 48%;
+    height: auto;
+}
+
+.rapid-image img {
+    max-width: 100%;
+    height: auto;
+    /* min-height: 500px; */
+
+    /* background-image: url("../IMG/Our_Services/Untitled-1.png"); */
+    background-color: #4e3d3d00;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* position: relative; */
 }
 
 @media screen and (max-width: 930px) {
@@ -136,5 +176,41 @@
 }
 
 @media screen and (max-width: 650px) {
+    .intro {
+        flex-direction: column;
+        order: 2;
+    }
+
+    .intro-content {
+        width: 90%;
+    }
+    
+    .intro-content p {
+        text-align: center
+    }
+    
+    .intro :nth-child(1) {
+        order: 2;
+    }
+
+    .intro-image {
+        width: 60%;
+    }
+
+    .comprehensive-support p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    .hero-text-container {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .comprehensive-support p {
+        width: 95%;
+    }
 
 }

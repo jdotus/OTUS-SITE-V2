@@ -27,6 +27,19 @@
             <p class="test-1">Even the most advanced technology needs expert care. We pride ourselves on offering fast, local, and utterly reliable technical support. When a machine needs attention, you need a solution now—not next week. That's the Otus promise.</p>
 
             <div class="comprehensive-main-content">
+                <div class="comprehensive-content-rapid test-1">
+                    
+                    <div class="rapid-content">
+                        <h2>Rapid, Local Response</h2>
+                        <p>Our team of highly skilled, certified technicians is based right here in, ensuring exceptionally quick dispatch and minimal wait times for onsite service calls. Your business is our priority.</p>
+                    </div>
+
+                    <div class="rapid-image">
+                        <img width="500" height="300" src="../OTUS_SITE_V2.1/img/Our_Services/Rapid.png" alt="RAPID IMAGE">
+                    </div>
+
+                </div>
+
 
             </div>
 
